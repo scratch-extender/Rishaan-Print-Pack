@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Rishaan Print Pack</title>
+    <style>
+        :root { 
+            --primary: #2c3e50; 
+            --accent: #e67e22; 
+            --light: #ecf0f1; 
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            color: #333; 
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        header { 
+            background: var(--primary); 
+            color: white; 
+            padding: 15px 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover { color: var(--accent); }
+
+        .container { padding: 60px 5%; max-width: 1200px; margin: auto; }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h1 { 
+            color: var(--primary); 
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .section-header .underline {
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            margin: 0 auto;
+        }
+
+        .products-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+
+        .product-card { 
+            border: 1px solid #eee; 
+            padding: 30px; 
+            border-radius: 12px; 
+            background: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+            border-color: var(--accent);
+        }
+
+        .product-card h3 { 
+            color: var(--primary); 
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .product-card p { color: #666; }
+
+        .tag {
+            background: var(--light);
+            color: var(--primary);
+            font-size: 0.8rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        footer { 
+            background: #1a252f; 
+            color: #bdc3c7; 
+            text-align: center; 
+            padding: 20px; 
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">Rishaan Print Pack</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="industries.html">Industries</a>
+        </div>
+    </div>
+</nav>
+
+</header>
+
+<main class="container">
+    <div class="section-header">
+        <h1>Our Packaging Solutions</h1>
+        <div class="underline"></div>
+    </div>
+
+    <section class="products-grid">
+        <div class="product-card">
+            <div>
+                <span class="tag">Heavy Duty</span>
+                <h3>Corrugated Carton Boxes</h3>
+                <p>Engineered for maximum durability. Available in 3 Ply, 5 Ply, 7 Ply, and 9 Ply variants to protect your goods during transit.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div>
+                <span class="tag">Branding</span>
+                <h3>Printed Packaging</h3>
+                <p>Enhance your brand visibility with high-definition custom printing and vibrant colors tailored to your design specifications.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div>
+                <span class="tag">Retail Ready</span>
+                <h3>Mono Carton Boxes</h3>
+                <p>Premium finish packaging designed for high-end retail, including cosmetics, pharmaceuticals, and consumer electronics.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    &copy; 2026 Rishaan Print Pack. All rights reserved.
+</footer>
+
+</body>
+</html>

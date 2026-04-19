@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Rishaan Print Pack</title>
+    <style>
+        :root { 
+            --primary: #2c3e50; 
+            --accent: #e67e22; 
+            --light: #ecf0f1; 
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            color: #333; 
+            line-height: 1.6; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header { 
+            background: var(--primary); 
+            color: white; 
+            padding: 15px 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover { color: var(--accent); }
+
+        .hero { 
+            background: #f9f9f9; 
+            padding: 100px 5%; 
+            text-align: center; 
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 5px solid var(--accent);
+        }
+
+        .hero h1 { 
+            font-size: 2.8rem; 
+            color: var(--primary); 
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* The Main Call Button */
+        .btn-call-large { 
+            background: var(--accent); 
+            color: white; 
+            padding: 20px 40px; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            font-size: 1.4rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+        }
+
+        .btn-call-large:hover { 
+            background: #d35400; 
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(230, 126, 34, 0.5);
+        }
+
+        footer { 
+            background: #1a252f; 
+            color: #bdc3c7; 
+            text-align: center; 
+            padding: 20px; 
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">Rishaan Print Pack</a>
+        <div class="nav-links">
+            <a href="about_us.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="industries.html">Industries</a>
+        </div>
+    </div>
+</nav>
+
+</header>
+
+<main class="hero">
+    <h1>Quality Meets Innovation in Packaging</h1>
+    <p>Premium Corrugated Boxes, Sheets, and Rolls for all Industrial & Retail Needs.</p>
+    
+    <a href="tel:9850508182" class="btn-call-large">
+        📞 Call Us: 9850508182
+    </a>
+    
+    <p style="margin-top: 20px; font-size: 0.9rem;">Available for bulk orders & customized solutions.</p>
+</main>
+
+<footer>
+    &copy; 2026 Rishaan Print Pack. All rights reserved.
+</footer>
+
+</body>
+</html>

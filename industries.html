@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries | Rishaan Print Pack</title>
+    <style>
+        :root { 
+            --primary: #2c3e50; 
+            --accent: #e67e22; 
+            --light: #ecf0f1; 
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            color: #333; 
+            line-height: 1.6;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header { 
+            background: var(--primary); 
+            color: white; 
+            padding: 15px 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover { color: var(--accent); }
+
+        .industry-hero {
+            background: var(--light);
+            padding: 60px 5%;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .industry-hero h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 50px 5%;
+            max-width: 1100px;
+            margin: auto;
+            flex-grow: 1;
+        }
+
+        .industry-item {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            border-top: 4px solid var(--accent);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .industry-item:hover {
+            transform: translateY(-5px);
+            background: var(--light);
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 40px 5%;
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-call {
+            background: var(--accent);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        footer { 
+            background: #1a252f; 
+            color: #bdc3c7; 
+            text-align: center; 
+            padding: 20px; 
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><strong>Rishaan Print Pack</strong></div>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">Rishaan Print Pack</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="products.html">Products</a>
+
+        </div>
+    </div>
+</nav>
+</header>
+
+<main>
+    <section class="industry-hero">
+        <h1>Industries We Serve</h1>
+        <p>Providing specialized packaging for Nashik, Pune, and beyond.</p>
+    </section>
+
+    <div class="industry-grid">
+        <div class="industry-item">Automotive</div>
+        <div class="industry-item">Agriculture</div>
+        <div class="industry-item">Textile</div>
+        <div class="industry-item">Food & Beverages</div>
+        <div class="industry-item">Pharmaceuticals</div>
+        <div class="industry-item">E-commerce</div>
+        <div class="industry-item">Logistics</div>
+        <div class="industry-item">Electronics</div>
+    </div>
+
+    <section class="cta-section">
+        <h2>Ready to start your project?</h2>
+        <p>Contact us for bulk pricing and custom dimensions.</p>
+        <a href="tel:9850508182" class="btn-call">Call: 9850508182</a>
+    </section>
+</main>
+
+<footer>
+    &copy; 2026 Rishaan Print Pack. All rights reserved.
+</footer>
+
+</body>
+</html>
